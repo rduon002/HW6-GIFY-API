@@ -10,25 +10,29 @@
 </head>
 <body>
 
-    <div class="container">
-        
-        <h1>Search for your favorite Gify here</h1>
+    <div class="header">
+        <h1>My Gif To You</h1>
+
+        <div class="search-bar">
+            <form id="movie-form">
+                <label for="gif-input"></label>
+                <input type="text" id="gif-input">
+                <input id="add-gif" type="submit" value="Search">
+            </form>
+        </div>   
 
     </div>
-    <!-- Buttons renders rendered here -->
-    <div id="buttons-view"></div>
 
-    <form id="movie-form">
-        <label for="gif-input"></label>
-        <input type="text" id="gif-input">
-        <input id="add-gif" type="submit" value="Search">
-    </form>
+    <!-- Buttons renders rendered here -->
+    <div class="buttons-container">
+        <div id="buttons-view"></div>
+    </div>
+
+    
 
     <!--User Input Gifs rendered here-->
-    <div id="gifs-appear-here">
-        
-    </div>
-
+    <div id="gifs-appear-here"></div>
+    
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
